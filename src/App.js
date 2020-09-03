@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { AddToShoppingList } from './containers/AddToShoppingList'
+import { ShoppingList } from './containers/ShoppingList'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ShoppingList />
+        <AddToShoppingList />
         <span>
           <span>Learn </span>
           <a

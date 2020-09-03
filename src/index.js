@@ -5,9 +5,6 @@ import App from './App';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import store from './store'
-import { itemAdded } from './actions/actionsCreator'
-
-store.dispatch(itemAdded("ahoj"));
 
 ReactDOM.render(
   <React.StrictMode>
