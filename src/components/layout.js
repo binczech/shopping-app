@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import '../styles.scss';
 import Header from './header';
 import Footer from './footer';
+import ShoppingList from './shoppingList';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const propTypes = {
     
@@ -14,7 +14,12 @@ function Layout(props) {
     <Container className="body-layout">
       <Header />
       <Row>
-        {props.children}
+        <Col>
+          {props.children}
+        </Col>
+        <Col sm="12" md="4">
+          <ShoppingList />
+        </Col>
       </Row>
       <Footer />
     </Container>

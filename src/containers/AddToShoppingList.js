@@ -1,6 +1,7 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { itemAdded } from '../actions/actionCreator'
+import  { Form, Button, InputGroup } from 'react-bootstrap'
 
 
 export const AddToShoppingList = () => {
@@ -8,20 +9,26 @@ export const AddToShoppingList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <form
-        onSubmit={e => {
+    <Form
+      onSubmit={e => {
         e.preventDefault()
         if (!input.value.trim()) {
-            return
+          return
         }
         dispatch(itemAdded(input.value))
         input.value = ''
-        }}
-      >
-        <input ref={node => (input = node)} />
-        <button type="submit">Add Item</button>
-      </form>
-    </div>
+      }}
+    >
+      <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Přidejte něco na seznam"
+          aria-describedby="basic-addon2"
+          ref={node => (input = node)}
+        />
+        <InputGroup.Append>
+          <Button type="submit" variant="primary">Přidat</Button>
+        </InputGroup.Append>
+      </InputGroup>
+    </Form>
     )
 }

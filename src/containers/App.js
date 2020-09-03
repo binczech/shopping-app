@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from '../logo.svg';
 import './App.css';
-import { AddToShoppingList } from './AddToShoppingList'
-import { ShoppingList } from './ShoppingList'
 import Layout from '../components/layout'
 
 function App() {
@@ -14,8 +12,6 @@ function App() {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <ShoppingList />
-          <AddToShoppingList />
           <span>
             <span>Learn </span>
             <a
