@@ -40,3 +40,27 @@
     visibility: hidden;
   }
 }
+
+.homepage-leaflet {
+  border: solid 1px #DBDFE2;
+  max-width: fit-content !important;
+  padding: 0 !important;
+  margin: 5px;
+  color: #000;
+  &:hover {
+    border: solid 1px #0269d9;
+    color: #0269d9;
+  }
+  .container {
+    padding: 0;
+  }
+  .title {
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+
+.category-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
