@@ -13,7 +13,7 @@ function Header(props) {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Letáky</Nav.Link>
-          <Nav.Link href="akce">Akce</Nav.Link>
+          <Nav.Link href="/slevy">Akce</Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Co hledáte?" className="mr-sm-2" />
